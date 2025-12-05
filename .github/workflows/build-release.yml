@@ -97,7 +97,7 @@ jobs:
       run: |
         export ${{ github.event.inputs.build_options }} LAN=${{ github.event.inputs.lan_addr }}
         [ -n ${{ github.event.inputs.root_password }} ] && export ROOT_PASSWORD="${{ github.event.inputs.root_password }}"
-        bash <(curl -sS http://127.0.0.1:8080/build.sh) ${{ github.event.inputs.device }}
+        bash <(curl -sS http://127.0.0.1:8080/openwrt/build.sh) ${{ github.event.inputs.device }}
         cd openwrt
         tags=$(git branch --show-current)
         echo "latest_release=$tags" >>$GITHUB_ENV
