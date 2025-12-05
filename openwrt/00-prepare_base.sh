@@ -1,5 +1,8 @@
 #!/bin/bash -e
 
+# 修复 Rust 错误
+sed -i 's/ci-llvm=true/ci-llvm=false/g' feeds/packages/lang/rust/Makefile
+
 # default LAN IP
 sed -i "s/192.168.1.1/$LAN/g" package/base-files/files/bin/config_generate
 
