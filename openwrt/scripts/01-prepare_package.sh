@@ -46,5 +46,11 @@ git clone --depth=1 https://github.com/destan19/OpenAppFilter.git package/OpenAp
 # Argon 主题
 git clone --depth=1 https://github.com/QuickWrt/luci-theme-argon package/luci-theme-argon
 
+# luci-app-bandix
+git clone https://$github/timsaya/luci-app-bandix package/new/luci-app-bandix
+
+# openwrt-bandix
+git clone https://$github/timsaya/openwrt-bandix package/new/openwrt-bandix
+
 ./scripts/feeds update -a
 ./scripts/feeds install -a
