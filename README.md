@@ -1,5 +1,5 @@
 <div align="center">
-<img width="768" src="zerowrt.png"/>
+<img width="768" src="images/zerowrt.png"/>
 <h1>OpenWrt — 多设备固件云编译</h1>
 
 <img src="https://img.shields.io/github/downloads/OPPEN321/immortalwrt-mt798x-action/total.svg?style=for-the-badge&color=32C955"/>
