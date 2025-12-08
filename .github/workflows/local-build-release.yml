@@ -2,48 +2,6 @@ name: ⚡ 本地编译
 
 on:
   workflow_dispatch:
-    inputs:
-      device:
-        description: '➡️ 选择需构建固件的设备型号'
-        required: true
-        default: 'netcore-n60-pro'
-        type: choice
-        options:
-          - 'cetron-ct3003'
-          - 'cmcc-a10'
-          - 'umi-uax3000e'          
-          - 'h3c-magic-nx30-pro'
-          - 'imou-lc-hx3001'
-          - 'nokia-ea0326gmp'
-          - 'newland-nl-wr8103'
-          - 'philips-hy3000'
-          - 'qihoo-360t7'
-          - 'clx-s20p'
-          - 'netcore-n60-pro'
-          - 'netcore-n60-pro-512rom'
-          - 'xiaomi-redmi-router-ax6000'
-          - 'xiaomi-redmi-router-ax6000-512rom'
-          - 'jdcloud-re-cp-03'
-      lan_addr:
-        description: '🌐 设置默认 LAN IP 地址'
-        required: true
-        default: '10.0.0.1'
-        type: string
-      wifi_name:
-        description: '🛜 设置默认 WIFI 名称（可选，默认ZeroWrt）'
-        required: false
-        default: 'ZeroWrt'
-        type: string        
-      root_password:
-        description: '🔐 设置默认 root 密码（可选，默认password）'
-        required: false
-        default: 'password'
-        type: string
-      build_options:
-        description: '🔧 构建选项（可输入多个，用空格分隔）'
-        required: false
-        default: 'BUILD_FAST=y ENABLE_BPF=y'
-        type: string
 
 jobs:
   build:
