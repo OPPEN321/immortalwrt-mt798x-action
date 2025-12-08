@@ -39,11 +39,11 @@
 | -------- | -------- |
 | 🟢 **Cetron CT3003** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/download/openwrt-24.10/zerowrt-mediatek-filogic-cetron_ct3003-ubootmod-squashfs-sysupgrade.bin) |
 | 🟢 **CMCC A10** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/download/openwrt-24.10/zerowrt-mediatek-filogic-cmcc_a10-ubootmod-squashfs-sysupgrade.bin) |
-| 🟢 **UMI UAX3000E** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/tag/openwrt-24.10) |
-| 🟢 **Philips HY3000** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/tag/openwrt-24.10) |
-| 🟢 **Newland NL-WR8103** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/tag/openwrt-24.10) |
-| 🟢 **H3C Magic NX30 Pro** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/tag/openwrt-24.10) |
-| 🟢 **Imou LC-HX3001** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/tag/openwrt-24.10) |
+| ❌ **UMI UAX3000E** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/tag/openwrt-24.10) |
+| ❌ **Philips HY3000** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/tag/openwrt-24.10) |
+| ❌ **Newland NL-WR8103** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/tag/openwrt-24.10) |
+| ❌ **H3C Magic NX30 Pro** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/tag/openwrt-24.10) |
+| ❌ **Imou LC-HX3001** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/tag/openwrt-24.10) |
 | 🟢 **Nokia EA0326GMP** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/download/openwrt-24.10/zerowrt-mediatek-filogic-nokia_ea0326gmp-squashfs-sysupgrade.bin) |
 | 🟢 **Qihoo 360T7** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/tag/openwrt-24.10) |
 | 🟢 **CLX S20P** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/download/openwrt-24.10/zerowrt-mediatek-filogic-clx_s20p-squashfs-sysupgrade.bin) |
@@ -52,6 +52,12 @@
 | 🟢 **JDCloud RE-CP-03** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/download/openwrt-24.10/zerowrt-mediatek-filogic-jdcloud_re-cp-03-squashfs-sysupgrade.bin) |
 | 🟢 **Xiaomi Redmi Router AX6000** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/download/openwrt-24.10/zerowrt-mediatek-filogic-xiaomi_redmi-router-ax6000-squashfs-sysupgrade.bin) |
 | 🟢 **Xiaomi Redmi Router AX6000 512ROM** | [![下载](https://img.shields.io/badge/下载-OpenWrt-blue)](https://github.com/OPPEN321/immortalwrt-mt798x-action/releases/download/openwrt-24.10/zerowrt-mediatek-filogic-xiaomi_redmi-router-ax6000-512rom-squashfs-sysupgrade.bin) |
+
+✅ 可用
+
+❌ 不可用
+
+⏳ 计划中
 
 ## 近期更新 [![](https://img.shields.io/badge/-近期固件更新-FFFFFF.svg)](#近期更新-)
 🤣努力修复中……
@@ -123,11 +129,11 @@
 
 ## 定制固件 [![](https://img.shields.io/badge/-项目基本编译教程-FFFFFF.svg)](#定制固件-)
 1. 首先要登录 Gihub 账号，然后 Fork 此项目到你自己的 Github 仓库
-2. 修改 `configs` 目录对应文件添加或删除插件，或者上传自己的 `xx.config` 配置文件
+2. 修改 `openwrt` 目录对应文件 `24-config-general` 添加或删除插件，或者上传自己的配置文件并重命名为 `24-config-general`
 3. 插件对应名称及功能请参考恩山网友帖子：[Applications 添加插件应用说明](https://www.right.com.cn/forum/thread-3682029-1-1.html)
-4. 如需修改默认 IP、添加或删除插件包以及一些其他设置请在 `diy-script.sh` 文件内修改
-5. 添加或修改 `xx.yml` 文件，最后点击 `Actions` 运行要编译的 `workflow` 即可开始编译
-6. 编译大概需要3-5小时，编译完成后在仓库主页 [Releases](https://github.com/haiibo/OpenWrt/releases) 对应 Tag 标签内下载固件
+4. 如需修改默认 IP、WIFI名称、ROOT密码，可在 Actions 页面修改自定义配置后，点击 Run workflow 即可开始在线编译
+5. 编译大概需要1小时，编译完成后在仓库主页 [Releases](OPPEN321/immortalwrt-mt798x-action) 对应 Tag 标签内下载固件
+
 <details>
 <summary><b>&nbsp;如果你觉得修改 config 文件麻烦，那么你可以点击此处尝试本地提取</b></summary>
 
@@ -150,13 +156,13 @@
 3. 下载源代码，更新 feeds 并安装到本地
 
    ```bash
-   git clone https://github.com/coolsnowwolf/lede
-   cd lede
+   git clone https://github.com/QuickWrt/immortalwrt-mt798x
+   cd immortalwrt-mt798x
    ./scripts/feeds update -a
    ./scripts/feeds install -a
    ```
 
-4. 复制 diy-script.sh 文件内所有内容到命令行，添加自定义插件和自定义设置
+4. 依次复制 openwrt/scripts 目录下的所有 x.sh 里的内容，添加自定义插件和自定义设置
 
 5. 命令行输入 `make menuconfig` 选择配置，选好配置后导出差异部分到 seed.config 文件
 
@@ -172,6 +178,33 @@
    **如果看不懂编译界面可以参考 YouTube 视频：[软路由固件 OpenWrt 编译界面设置](https://www.youtube.com/watch?v=jEE_J6-4E3Y&list=WL&index=7)**
 </details>
 
+## 特殊变量 [![](https://img.shields.io/badge/-为该项目启动特殊变量-FFFFFF.svg)](#特殊变量-)
+
+### 启用 [eBPF](https://docs.kernel.org/bpf/) 支持
+##### 只需在构建固件前在构建选项中加入该选项即可启用 eBPF 支持
+
+```
+ENABLE_BPF=y
+```
+
+### 快速构建
+##### 只需在构建固件前在构建选项中加入该选项即可启用快速构建
+
+```
+BUILD_FAST=y
+```
+
+### Docker
+##### 只需在构建固件前在构建选项中加入该选项即可在固件中加入 DOCKER
+```
+BUILD_DOCKER=y
+```
+
+### SAMBA4
+##### 只需在构建固件前在构建选项中加入该选项即可在固件中加入 SAMBA4
+```
+ENABLE_SAMBA4=y
+```
 
 ## 特别提示 [![](https://img.shields.io/badge/-个人免责声明-FFFFFF.svg)](#特别提示-)
 
