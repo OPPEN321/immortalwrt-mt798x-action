@@ -126,46 +126,10 @@ jobs:
       run: |
         mkdir -p rom
         case "${{ github.event.inputs.device }}" in
-          cetron-ct3003)
-              cp -a openwrt/bin/targets/mediatek/*/*-sysupgrade.bin rom/
-              ;;
-          cmcc-a10)
-              cp -a openwrt/bin/targets/mediatek/*/*-sysupgrade.bin rom/
-              ;;
-          h3c-magic-nx30-pro)
-              cp -a openwrt/bin/targets/mediatek/*/*-sysupgrade.bin rom/
-              ;;
-          imou-lc-hx3001)
-              cp -a openwrt/bin/targets/mediatek/*/*-sysupgrade.bin rom/
-              ;;
-          nokia-ea0326gmp)
-              cp -a openwrt/bin/targets/mediatek/*/*-sysupgrade.bin rom/
-              ;;
-          qihoo-360t7)
-              cp -a openwrt/bin/targets/mediatek/*/*-sysupgrade.bin rom/
-              ;;
-          newland-nl-wr8103)
-              cp -a openwrt/bin/targets/mediatek/*/*-sysupgrade.bin rom/
-              ;;
-          umi-uax3000e)
-              cp -a openwrt/bin/targets/mediatek/*/*-sysupgrade.bin rom/
-              ;;
-          clx-s20p)
-              cp -a openwrt/bin/targets/mediatek/*/*-sysupgrade.bin rom/
-              ;;
-          netcore-n60-pro)
-              cp -a openwrt/bin/targets/mediatek/*/*-sysupgrade.bin rom/
-              ;;
-          netcore-n60-pro-512rom)
-              cp -a openwrt/bin/targets/mediatek/*/*-sysupgrade.bin rom/
-              ;;
-          xiaomi-redmi-router-ax6000)
-              cp -a openwrt/bin/targets/mediatek/*/*-sysupgrade.bin rom/
-              ;;
-            xiaomi-redmi-router-ax6000-512rom)
-              cp -a openwrt/bin/targets/mediatek/*/*-sysupgrade.bin rom/
-              ;;
-          jdcloud-re-cp-03)
+          cetron-ct3003|cmcc-a10|h3c-magic-nx30-pro|imou-lc-hx3001|nokia-ea0326gmp|\
+          philips-hy3000|qihoo-360t7|newland-nl-wr8103|umi-uax3000e|clx-s20p|\
+          netcore-n60-pro|netcore-n60-pro-512rom|xiaomi-redmi-router-ax6000|\
+          xiaomi-redmi-router-ax6000-512rom|jdcloud-re-cp-03)
               cp -a openwrt/bin/targets/mediatek/*/*-sysupgrade.bin rom/
               ;;
         esac
