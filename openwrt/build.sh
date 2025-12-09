@@ -86,6 +86,14 @@ case "$platform" in
     cmcc-rax3000m-emmc)
         echo -e "${GREEN_COLOR}Model: CMCC RAX3000M EMMC${RES}"
         model="cmcc-rax3000m-emmc"
+        ;;
+    cmcc-rax3000m-nand)
+        echo -e "${GREEN_COLOR}Model: CMCC RAX3000M NAND${RES}"
+        model="cmcc-rax3000m-nand"
+        ;;
+    cmcc-rax3000me-nand)
+        echo -e "${GREEN_COLOR}Model: CMCC RAX3000ME NAND${RES}"
+        model="cmcc-rax3000me-nand"
         ;;        
     umi-uax3000e)
         echo -e "${GREEN_COLOR}Model: UMI-UAX3000E${RES}"
@@ -257,7 +265,13 @@ case "$platform" in
         ;;
     cmcc-rax3000m-emmc)
         curl -s $mirror/openwrt/24-config-musl-rax3000m-emmc > .config
-        ;;        
+        ;;
+    cmcc-rax3000m-nand)
+        curl -s $mirror/openwrt/24-config-musl-rax3000m-nand > .config
+        ;;
+    cmcc-rax3000me-nand)
+        curl -s $mirror/openwrt/24-config-musl-rax3000me-nand > .config
+        ;;
     umi-uax3000e)
         curl -s $mirror/openwrt/24-config-musl-uax3000e > .config
         ;;
