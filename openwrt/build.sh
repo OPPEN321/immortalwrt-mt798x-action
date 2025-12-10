@@ -87,13 +87,13 @@ case "$platform" in
         echo -e "${GREEN_COLOR}Model: CMCC RAX3000M EMMC${RES}"
         model="cmcc-rax3000m-emmc"
         ;;
-    cmcc-rax3000m-nand)
-        echo -e "${GREEN_COLOR}Model: CMCC RAX3000M NAND${RES}"
+    cmcc-rax3000m)
+        echo -e "${GREEN_COLOR}Model: CMCC RAX3000M${RES}"
         model="cmcc-rax3000m-nand"
         ;;
-    cmcc-rax3000me-nand)
-        echo -e "${GREEN_COLOR}Model: CMCC RAX3000ME NAND${RES}"
-        model="cmcc-rax3000me-nand"
+    cmcc-rax3000me)
+        echo -e "${GREEN_COLOR}Model: CMCC RAX3000ME${RES}"
+        model="cmcc-rax3000me"
         ;;        
     umi-uax3000e)
         echo -e "${GREEN_COLOR}Model: UMI-UAX3000E${RES}"
@@ -271,10 +271,10 @@ case "$platform" in
         curl -s $mirror/openwrt/24-config-musl-rax3000m-emmc > .config
         ;;
     cmcc-rax3000m-nand)
-        curl -s $mirror/openwrt/24-config-musl-rax3000m-nand > .config
+        curl -s $mirror/openwrt/24-config-musl-rax3000m > .config
         ;;
     cmcc-rax3000me-nand)
-        curl -s $mirror/openwrt/24-config-musl-rax3000me-nand > .config
+        curl -s $mirror/openwrt/24-config-musl-rax3000me > .config
         ;;
     umi-uax3000e)
         curl -s $mirror/openwrt/24-config-musl-uax3000e > .config
@@ -334,7 +334,7 @@ esac
 
 # config-common
 case "$platform" in
-    cetron-ct3003|cmcc-a10|cmcc-rax3000m-emmc|umi-uax3000e|h3c-magic-nx30-pro|imou-lc-hx3001|nokia-ea0326gmp|philips-hy3000|qihoo-360t7|newland-nl-wr8103|xiaomi-mi-router-ax3000t|all-mt7981-devices)
+    cetron-ct3003|cmcc-a10|cmcc-rax3000m|cmcc-rax3000m-emmc|cmcc-rax3000me|umi-uax3000e|h3c-magic-nx30-pro|imou-lc-hx3001|nokia-ea0326gmp|philips-hy3000|qihoo-360t7|newland-nl-wr8103|xiaomi-mi-router-ax3000t|all-mt7981-devices)
         curl -s "$mirror/openwrt/24-config-ax3000-common" >> .config
         ;;
     jdcloud-re-cp-03|xiaomi-redmi-router-ax6000|xiaomi-redmi-router-ax6000-512rom|all-mt7986-devices)
