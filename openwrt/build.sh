@@ -75,6 +75,10 @@ export WIFI_PASSWORD=$WIFI_PASSWORD
 # print version
 echo -e "\r\n${GREEN_COLOR}Building $platform${RES}\r\n"
 case "$platform" in
+    abt-asr3000)
+        echo -e "${GREEN_COLOR}Model: ABT ASR 3000${RES}"
+        model="asr3000"
+        ;;
     cetron-ct3003)
         echo -e "${GREEN_COLOR}Model: Cetron CT3003 (U-Boot mod)${RES}"
         model="ct3003"
@@ -269,6 +273,9 @@ rm -f 0*-*.sh 10-custom.sh
 
 # Load devices Config
 case "$platform" in
+    abt-asr3000)
+        curl -s $mirror/openwrt/24-config-musl-asr3000 > .config
+        ;;
     cetron-ct3003)
         curl -s $mirror/openwrt/24-config-musl-ct3003 > .config
         ;;
@@ -348,7 +355,7 @@ esac
 
 # config-common
 case "$platform" in
-    cetron-ct3003|cmcc-a10|cmcc-rax3000m|cmcc-rax3000m-emmc|cmcc-rax3000me|umi-uax3000e|h3c-magic-nx30-pro|imou-lc-hx3001|nokia-ea0326gmp|philips-hy3000|qihoo-360t7|newland-nl-wr8103|xiaomi-mi-router-ax3000t|sl-3000|sl-3000-emmc|all-mt7981-devices)
+    abt-asr3000|cetron-ct3003|cmcc-a10|cmcc-rax3000m|cmcc-rax3000m-emmc|cmcc-rax3000me|umi-uax3000e|h3c-magic-nx30-pro|imou-lc-hx3001|nokia-ea0326gmp|philips-hy3000|qihoo-360t7|newland-nl-wr8103|xiaomi-mi-router-ax3000t|sl-3000|sl-3000-emmc|all-mt7981-devices)
         curl -s "$mirror/openwrt/24-config-ax3000-common" >> .config
         ;;
     jdcloud-re-cp-03|xiaomi-redmi-router-ax6000|xiaomi-redmi-router-ax6000-512rom|all-mt7986-devices)
