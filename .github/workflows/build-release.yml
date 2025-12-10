@@ -55,16 +55,16 @@ on:
         required: false
         default: 'password'
         type: string
-      stylized_istoreos:
-        description: '🎨 是否风格化 iStoreOS（可选，默认关闭）'
-        type: boolean
-        default: false
       build_options:
         description: '🔧 构建选项（可输入多个，用空格分隔）'
         required: false
         default: 'BUILD_FAST=y ENABLE_BPF=y'
         type: string
-
+      stylized_istoreos:
+        description: '🎨 是否风格化 iStoreOS（可选，默认关闭）'
+        type: boolean
+        default: false
+        
 jobs:
   build:
     name: Build ${{ github.event.inputs.device }}
