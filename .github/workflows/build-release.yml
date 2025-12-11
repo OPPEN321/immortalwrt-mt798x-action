@@ -15,6 +15,7 @@ on:
           - 'cmcc-rax3000m-emmc'
           - 'cmcc-rax3000m'
           - 'cmcc-rax3000me'
+          - 'cmcc-xr30'
           - 'umi-uax3000e'          
           - 'h3c-magic-nx30-pro'
           - 'imou-lc-hx3001'
