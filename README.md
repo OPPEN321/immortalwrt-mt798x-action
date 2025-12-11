@@ -1,5 +1,5 @@
 <div align="center">
-<img width="768" src="images/zerowrt.png"/>
+<img width="768" src="https://cdn.jsdelivr.net/gh/OPPEN321/immortalwrt-mt798x-action/images/zerowrt.png"/>
 <h1>OpenWrt — 多设备固件云编译</h1>
 
 <img src="https://img.shields.io/github/downloads/OPPEN321/immortalwrt-mt798x-action/total.svg?style=for-the-badge&color=32C955"/>
@@ -67,8 +67,8 @@
 🤣努力修复中……
 
 ## 固件预览 [![](https://img.shields.io/badge/-固件风格预览-FFFFFF.svg)](#固件预览-)
-![star](images/000.png)
-![star](images/001.png)
+![star](https://cdn.jsdelivr.net/gh/OPPEN321/immortalwrt-mt798x-action/images/000.png)
+![star](https://cdn.jsdelivr.net/gh/OPPEN321/immortalwrt-mt798x-action/images/001.png)
 
 ## 插件预览 [![](https://img.shields.io/badge/-插件及功能预览-FFFFFF.svg)](#插件预览-)
 <details>
