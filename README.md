@@ -2,6 +2,40 @@
 <img width="768" src="https://cdn.jsdelivr.net/gh/OPPEN321/immortalwrt-mt798x-action/images/zerowrt.png"/>
 <h1>OpenWrt — 多设备固件云编译</h1>
 
+<div align="center" style="
+  border-radius: 20px;
+  padding: 25px;
+  background: linear-gradient(135deg, #6EE7B7 0%, #3B82F6 100%);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  margin: 30px 0;
+">
+
+  <h2 style="font-size: 32px; margin-bottom: 10px;">
+    ✈️ 推荐机场：iNteS
+  </h2>
+
+  <p style="font-size: 20px; margin-top: 0;">
+    稳定高速 · 中转加速 · 流媒体解锁 · 性价比极高
+  </p>
+
+  <a href="https://inets.io/#/register?code=ZN6cU08m" target="_blank" style="
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 28px;
+    font-size: 22px;
+    color: white;
+    background: #EF4444;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  ">
+    👉 点击加入 iNteS（含专属优惠）
+  </a>
+
+</div>
+
 <img src="https://img.shields.io/github/downloads/OPPEN321/immortalwrt-mt798x-action/total.svg?style=for-the-badge&color=32C955"/>
 <img src="https://img.shields.io/github/stars/OPPEN321/immortalwrt-mt798x-action.svg?style=for-the-badge&color=orange"/>
 <img src="https://img.shields.io/github/forks/OPPEN321/immortalwrt-mt798x-action.svg?style=for-the-badge&color=ff69b4"/>
