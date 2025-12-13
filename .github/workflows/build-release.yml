@@ -16,6 +16,7 @@ on:
           - 'cmcc-rax3000m'
           - 'cmcc-rax3000me'
           - 'cmcc-xr30'
+          - 'cmcc-xr30-emmc'          
           - 'umi-uax3000e'          
           - 'h3c-magic-nx30-pro'
           - 'imou-lc-hx3001'
@@ -159,7 +160,7 @@ jobs:
         mkdir -p rom
         case "${{ github.event.inputs.device }}" in
           abt-asr3000|cetron-ct3003|cmcc-a10|cmcc-rax3000m-emmc|cmcc-rax3000m|cmcc-rax3000me|cmcc-xr30|\
-          h3c-magic-nx30-pro|imou-lc-hx3001|nokia-ea0326gmp|philips-hy3000|qihoo-360t7|sl-3000|\
+          cmcc-xr30-emmc|h3c-magic-nx30-pro|imou-lc-hx3001|nokia-ea0326gmp|philips-hy3000|qihoo-360t7|sl-3000|\
           sl-3000-emmc|newland-nl-wr8103|umi-uax3000e|xiaomi-mi-router-ax3000t|clx-s20p|netcore-n60|\
           netcore-n60-pro|netcore-n60-pro-512rom|xiaomi-redmi-router-ax6000|xiaomi-redmi-router-ax6000-512rom|\
           ikuai-q6000|ikuai-q6000-emmc|jdcloud-re-cp-03|all-mt7981-devices|all-mt7986-devices|all-high-power-devices)
